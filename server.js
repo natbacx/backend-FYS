@@ -92,5 +92,5 @@ app.delete('/users/:id/favorites/:musica_id', auth, async (req, res) => {
   res.json(data)
 })
 
-const PORT = process.env.PORT || 3000
-app.listen(PORT, '0.0.0.0', () => console.log('Servidor rodando na porta', PORT))
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log('Servidor rodando na porta ${PORT}'));
